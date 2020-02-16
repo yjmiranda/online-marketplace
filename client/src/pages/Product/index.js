@@ -4,6 +4,7 @@ import {useStoreContext} from "../../utils/GlobalState";
 import API from "../../utils/API";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
 import Spinner from "react-bootstrap/Spinner"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Product.css";
@@ -88,9 +89,9 @@ const Product = (props) =>{
                 <h5>Product Description:</h5>
                 <p>{state.currentProduct.description}</p>
                 {checkCartList() ? (
-                    <button className="btn btn-lg btn-danger" onClick={()=>removeFromCart()}>Remove from Cart</button>
+                    <Button variant="danger" size="lg" onClick={()=>removeFromCart()}>Remove from Cart</Button>
                 ) : (
-                    <button className="btn btn-lg btn-success" onClick={()=>addToCart()}>Add to Cart</button>
+                    <Button variant="success" size="lg" onClick={()=>addToCart()}>Add to Cart</Button>
                 )}
             </Container>
             )}

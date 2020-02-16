@@ -39,7 +39,7 @@ const Landing = () => {
                             <Card key={index}>
                                 <Image src={product.image} className="mx-auto product-list-image"/>
                                 <Card.Body>
-                                    <Card.Title><Link to={"product/" + product.sku}>{product.name}</Link></Card.Title>
+                                    <Card.Title><Link to={"/product/" + product.sku}>{product.name}</Link></Card.Title>
                                     <h3>Price: ${product.regularPrice}</h3>
                                 </Card.Body>
                             </Card>

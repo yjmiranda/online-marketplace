@@ -42,7 +42,7 @@ const MyNavbar = () => {
     </Nav>
     <Form onSubmit={e=>{e.preventDefault();}} inline>
       <FormControl type="text" placeholder="Search" className="mr-sm-2" ref={searchRef}/>
-      <Button variant="outline-info" onClick={()=>handleSearch()}>Search</Button>
+      <Link to="/home"><Button variant="outline-info" onClick={()=>handleSearch()}>Search</Button></Link>
     </Form>
   </Navbar>
     );
