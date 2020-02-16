@@ -9,7 +9,7 @@ router
 
 // Matches with "/api/products/:id"
 router
-  .route("/:id")
+  .route("/search/:id")
   .get(productsController.findById)
   .put(productsController.update)
   .delete(productsController.remove);

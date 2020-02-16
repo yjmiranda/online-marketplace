@@ -1,0 +1,10 @@
+.product-info-image{
+    height: 300px;
+    display: block;
+}
+
+.loading{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
