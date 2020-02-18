@@ -34,7 +34,7 @@ const MyNavbar = () => {
   }
     return (
   <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="/home">Marketplace<small> (powered by Best Buy)</small> </Navbar.Brand>
+    <Link className="navbar-brand" to="/home">Marketplace<small> (powered by Best Buy)</small> </Link>
     <Nav className="mr-auto">
       <Link className="nav-link" to="/home">Home</Link>
       <Link className="nav-link" to="/cart">Cart</Link>

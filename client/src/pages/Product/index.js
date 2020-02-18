@@ -80,7 +80,7 @@ const Product = (props) =>{
     return(
         <div className="mt-3">
             {state.loading ? (<Spinner animation="border" className="loading"/>) : (
-            <Container>
+            <Container className="mb-5">
                 <Image src={state.currentProduct.thumbnail_url} className="mx-auto product-info-image"/>
                 <h3 className="mt-2 text-center">{state.currentProduct.title}</h3>
                 <h6 className="mt-w text-center">Sold by: {state.currentProduct.seller}</h6>

@@ -37,7 +37,7 @@ const Landing = () => {
                     {state.productList.length ? (
                         state.productList.map((product,index)=>(
                             <Card key={index}>
-                                <Image src={product.image} className="mx-auto product-list-image"/>
+                                <Image src={product.image} className="mx-auto mt-2 product-list-image"/>
                                 <Card.Body>
                                     <Card.Title><Link to={"/product/" + product.sku}>{product.name}</Link></Card.Title>
                                     <h3>Price: ${product.regularPrice}</h3>
